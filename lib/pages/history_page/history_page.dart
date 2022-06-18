@@ -31,6 +31,7 @@ class History_Page extends StatelessWidget {
             child: Column(
               children: [
                 Container(
+                  height: 50,
                   decoration: BoxDecoration(
                       color: Color(0XFFDBDBDB),
                       borderRadius: BorderRadius.circular(32)),

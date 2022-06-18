@@ -9,9 +9,9 @@ class splash_second extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-          margin: EdgeInsets.only(left: 23, top: 30),
-          child: Column(
+      body: ListView(
+        children: [
+          Column(
             children: [
               Container(
                 child: Center(
@@ -36,7 +36,9 @@ class splash_second extends StatelessWidget {
                 ),
               ),
             ],
-          )),
+          )
+        ],
+      ),
     );
   }
 }
