@@ -14,9 +14,9 @@ class FormPerson extends StatelessWidget {
       padding: const EdgeInsets.only(
         left: 24,
         right: 24,
-        top: 10,
       ),
       child: Custom_Form_Suf(
+          textValue: 'Isi nama lengkap',
           hintText: 'Nama Lengkap',
           icon: Icon(
             Icons.person,

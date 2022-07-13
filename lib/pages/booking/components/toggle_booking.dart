@@ -3,8 +3,8 @@ import 'package:toggle_switch/toggle_switch.dart';
 
 import '../../../styles/constrans.dart';
 
-class Toggle_Booking extends StatelessWidget {
-  const Toggle_Booking({
+class ToggleBooking extends StatelessWidget {
+  const ToggleBooking({
     Key? key,
   }) : super(key: key);
 

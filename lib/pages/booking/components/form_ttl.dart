@@ -12,9 +12,9 @@ class FormTtl extends StatelessWidget {
       padding: const EdgeInsets.only(
         left: 24,
         right: 24,
-        top: 10,
       ),
       child: Custom_Form_Suf(
+          textValue: 'Isi tanggal Lahir',
           hintText: '01-03-2022',
           icon: Icon(
             Icons.calendar_month,

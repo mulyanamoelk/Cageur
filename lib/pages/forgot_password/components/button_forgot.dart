@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sistem_antrian/pages/password_verification/password_verification.dart';
+import 'package:sistem_antrian/widget/custom_button.dart';
 
-import '../../../Widget/custom_button.dart';
+import '../../../styles/constrans.dart';
 
 class ButtonForgots extends StatelessWidget {
   const ButtonForgots({
@@ -11,15 +11,7 @@ class ButtonForgots extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 24, right: 24, top: 40),
-      child: custom_button(
-          text: 'Lanjut',
-          onPressed: () {
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => const VerificationPassword()));
-          }),
-    );
+        padding: const EdgeInsets.only(left: 24, right: 24, top: 40),
+        child: custom_button(text: 'text', onPressed: () {}, warna: kgreen));
   }
 }

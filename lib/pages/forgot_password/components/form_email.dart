@@ -13,6 +13,7 @@ class FormEmailForgot extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 24, right: 24),
       child: Custom_Form_Suf(
+          textValue: 'Email tidak boleh kosong',
           hintText: 'Email',
           icon: Icon(
             Icons.mail,

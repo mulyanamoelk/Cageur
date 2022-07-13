@@ -6,13 +6,15 @@ class custom_button extends StatelessWidget {
   final double width;
   final Function() onPressed;
   final EdgeInsets margin;
+  final Color warna;
 
   const custom_button(
       {Key? key,
       required this.text,
       this.width = double.infinity,
       required this.onPressed,
-      this.margin = EdgeInsets.zero})
+      this.margin = EdgeInsets.zero,
+      required this.warna})
       : super(key: key);
 
   @override
@@ -21,7 +23,7 @@ class custom_button extends StatelessWidget {
       width: width,
       height: 56,
       decoration:
-          BoxDecoration(color: kgreen, borderRadius: BorderRadius.circular(32)),
+          BoxDecoration(color: warna, borderRadius: BorderRadius.circular(32)),
       child: TextButton(
           onPressed: onPressed,
           child: Text(

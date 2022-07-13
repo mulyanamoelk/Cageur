@@ -12,9 +12,9 @@ class FormBb extends StatelessWidget {
       padding: const EdgeInsets.only(
         left: 24,
         right: 24,
-        top: 10,
       ),
       child: Custom_Form_Suf(
+          textValue: 'Isi berat badan',
           hintText: '65 Kg',
           icon: Icon(
             Icons.woman_outlined,

@@ -12,8 +12,9 @@ class Form_Email extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 28, right: 28, bottom: 10, top: 30),
+      padding: const EdgeInsets.only(left: 28, right: 28, top: 30),
       child: Custom_Form_Suf(
+          textValue: 'Isi Email',
           hintText: 'Email',
           icon: Icon(
             Icons.mail,

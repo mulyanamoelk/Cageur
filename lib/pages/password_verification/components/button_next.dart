@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
-import '../../../Widget/custom_button.dart';
+import 'package:sistem_antrian/styles/constrans.dart';
+import 'package:sistem_antrian/widget/custom_button.dart';
 
 class ButtonNext extends StatelessWidget {
   const ButtonNext({
@@ -10,8 +10,7 @@ class ButtonNext extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 24, right: 24, top: 30),
-      child: custom_button(text: 'Next', onPressed: () {}),
-    );
+        padding: const EdgeInsets.only(left: 24, right: 24, top: 30),
+        child: custom_button(text: 'Next', onPressed: () {}, warna: kgreen));
   }
 }

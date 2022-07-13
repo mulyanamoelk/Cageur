@@ -12,9 +12,9 @@ class FormPenyakit extends StatelessWidget {
       padding: const EdgeInsets.only(
         left: 24,
         right: 24,
-        top: 10,
       ),
       child: Custom_Form_Suf(
+          textValue: 'Apa riwayat penyakit',
           hintText: 'Batuk',
           icon: Icon(
             Icons.coronavirus,

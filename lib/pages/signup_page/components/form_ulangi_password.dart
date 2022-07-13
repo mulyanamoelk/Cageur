@@ -1,24 +1,45 @@
 import 'package:flutter/material.dart';
+import 'package:sistem_antrian/widget/custom_password.dart';
 
 import '../../../styles/constrans.dart';
 import '../../../widget/custom_form_suf.dart';
 
-class Form_Ulangi_Password extends StatelessWidget {
-  const Form_Ulangi_Password({
-    Key? key,
-  }) : super(key: key);
+class FormTryPassword extends StatefulWidget {
+  const FormTryPassword({Key? key}) : super(key: key);
+
+  @override
+  State<FormTryPassword> createState() => _FormTryPasswordState();
+}
+
+class _FormTryPasswordState extends State<FormTryPassword> {
+  bool _isHidePassword = true;
+  void togglePassword() {
+    setState(() {
+      _isHidePassword = !_isHidePassword;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(left: 28, right: 28, bottom: 10),
-      child: Custom_Form_Suf(
+    return Container(
+      margin: EdgeInsets.only(left: 24, right: 24, top: 10),
+      child: CustomPassword(
           hintText: 'Ulangi Password',
-          icon: Icon(
+          iconsSuff: IconButton(
+              onPressed: () {
+                setState(() {});
+                _isHidePassword = !_isHidePassword;
+              },
+              icon: Icon(
+                _isHidePassword ? Icons.visibility_off : Icons.visibility,
+                color: _isHidePassword ? kgrey : kgreen,
+              )),
+          iconsPre: Icon(
             Icons.lock,
             color: kgreen,
           ),
-          typeInput: TextInputType.visiblePassword),
+          Obscure: _isHidePassword,
+          ValidatorValue: 'Isi Password'),
     );
   }
 }

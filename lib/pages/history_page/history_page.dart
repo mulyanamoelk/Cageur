@@ -16,7 +16,9 @@ class History_Page extends StatelessWidget {
             elevation: 0,
             backgroundColor: kwhite,
             leading: IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pop(context);
+                },
                 icon: Icon(
                   Icons.arrow_back_ios_new,
                   color: kpurple,

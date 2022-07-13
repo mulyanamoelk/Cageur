@@ -35,6 +35,7 @@ class _Convex_Navigation_BarState extends State<Convex_Navigation_Bar> {
     return Scaffold(
         body: pages[index],
         bottomNavigationBar: ConvexAppBar(
+          curveSize: 20,
           backgroundColor: kwhite,
           activeColor: kgreen2,
           color: kgrey,
@@ -49,7 +50,7 @@ class _Convex_Navigation_BarState extends State<Convex_Navigation_Bar> {
             TabItem(icon: Icons.home, title: 'Home'),
             TabItem(icon: Icons.history_sharp, title: 'Riwayat'),
             TabItem(icon: Icons.search, title: 'Search'),
-            TabItem(icon: Icons.notifications, title: 'Notification'),
+            TabItem(icon: Icons.notifications, title: 'Notif'),
             TabItem(icon: Icons.person, title: 'Profile'),
           ],
         ));

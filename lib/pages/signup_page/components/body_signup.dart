@@ -14,20 +14,45 @@ import 'package:sistem_antrian/widget/custom_button.dart';
 import 'package:sistem_antrian/widget/custom_form.dart';
 import 'package:sistem_antrian/widget/custom_form_suf.dart';
 
-class Body_Signup extends StatelessWidget {
-  const Body_Signup({Key? key}) : super(key: key);
+class BodySignUp extends StatefulWidget {
+  const BodySignUp({Key? key}) : super(key: key);
 
+  @override
+  State<BodySignUp> createState() => _BodySignUpState();
+}
+
+class _BodySignUpState extends State<BodySignUp> {
+  final _formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
     return ListView(
       children: [
-        Title_SignUp(),
-        Form_Email(),
-        Form_Phone(),
-        Form_Password(),
-        Form_Ulangi_Password(),
-        Button_SignUp(),
-        Sudah_Punya()
+        Form(
+            key: _formKey,
+            child: Column(
+              children: [
+                Title_SignUp(),
+                Form_Email(),
+                Form_Phone(),
+                FormPassword(),
+                FormTryPassword(),
+                Padding(
+                  padding: const EdgeInsets.only(top: 50, left: 24, right: 24),
+                  child: custom_button(
+                      text: 'SignUp',
+                      onPressed: () {
+                        if (_formKey.currentState!.validate()) {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => SignInPage()));
+                        }
+                      },
+                      warna: kgreen),
+                ),
+                Sudah_Punya()
+              ],
+            ))
       ],
     );
   }

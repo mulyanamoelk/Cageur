@@ -24,7 +24,7 @@ class Sudah_Punya extends StatelessWidget {
             TextButton(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => SignIn_Page()));
+                      MaterialPageRoute(builder: (context) => SignInPage()));
                 },
                 child: Text(
                   'Login',

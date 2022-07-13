@@ -4,6 +4,7 @@ import 'package:sistem_antrian/pages/details_page/details_page.dart';
 import 'package:sistem_antrian/pages/home_page/home_page.dart';
 import 'package:sistem_antrian/pages/signin_page/signin_page.dart';
 import 'package:sistem_antrian/views/splash/splash.dart';
+import 'package:sistem_antrian/views/splash_second/splash_second.dart';
 
 void main() {
   runApp(const MyApp());

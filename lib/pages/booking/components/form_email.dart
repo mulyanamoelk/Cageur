@@ -12,9 +12,9 @@ class FormEmail extends StatelessWidget {
       padding: const EdgeInsets.only(
         left: 24,
         right: 24,
-        top: 10,
       ),
       child: Custom_Form_Suf(
+          textValue: 'Isi Email',
           hintText: 'Cageur@gmail.com',
           icon: Icon(
             Icons.phone,

@@ -12,8 +12,12 @@ class Form_Phone extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 28, right: 28, bottom: 10),
+      padding: const EdgeInsets.only(
+        left: 28,
+        right: 28,
+      ),
       child: Custom_Form_Suf(
+          textValue: 'Isi Nomor',
           hintText: 'Phone Number',
           icon: Icon(
             Icons.phone_android,

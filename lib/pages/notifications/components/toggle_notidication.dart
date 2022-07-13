@@ -10,10 +10,10 @@ class toggle_notification extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 10),
+      padding: const EdgeInsets.only(top: 10, left: 36, right: 36),
       child: ToggleSwitch(
-        minWidth: 106,
         minHeight: 56,
+        minWidth: 112,
         fontSize: 16.0,
         initialLabelIndex: 1,
         cornerRadius: 32,
@@ -23,9 +23,7 @@ class toggle_notification extends StatelessWidget {
         inactiveFgColor: Colors.grey[900],
         totalSwitches: 3,
         labels: ['Sukses', 'Diproses', 'Batal'],
-        onToggle: (index) {
-          print('switched to: $index');
-        },
+        onToggle: (index) {},
       ),
     );
   }

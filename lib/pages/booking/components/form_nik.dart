@@ -13,6 +13,7 @@ class FormNik extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 24, right: 24),
       child: Custom_Form_Suf(
+          textValue: 'Isi NIK',
           hintText: 'NIK',
           icon: Icon(
             Icons.tag,

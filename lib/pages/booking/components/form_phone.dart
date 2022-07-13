@@ -12,9 +12,9 @@ class FormPhone extends StatelessWidget {
       padding: const EdgeInsets.only(
         left: 24,
         right: 24,
-        top: 10,
       ),
       child: Custom_Form_Suf(
+          textValue: 'Isi Nomor',
           hintText: '089662548161',
           icon: Icon(
             Icons.phone,

@@ -23,7 +23,7 @@ class Body_Signin extends StatelessWidget {
       children: [
         Title_Signin(),
         Email_Form(),
-        Password_Form(),
+        FormPassword(),
         Forgot_Password(),
         Button_Login(),
         Option(),

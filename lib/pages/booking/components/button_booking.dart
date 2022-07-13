@@ -1,39 +1,53 @@
 import 'package:flutter/material.dart';
 import 'package:sistem_antrian/pages/signin_page/signin_page.dart';
 
-import '../../../Widget/custom_button.dart';
-import '../../signup_page/signup.dart';
+import '../../../styles/constrans.dart';
+import '../../../widget/custom_button.dart';
 
 class ButtonBooking extends StatelessWidget {
   const ButtonBooking({
     Key? key,
-  }) : super(key: key);
+    required GlobalKey<FormState> formKey,
+  })  : _formKey = formKey,
+        super(key: key);
+
+  final GlobalKey<FormState> _formKey;
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(left: 43, right: 43, top: 10, bottom: 30),
+    return Container(
+      margin: EdgeInsets.only(top: 30, bottom: 30),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          TextButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              child: Text(
-                'Kembali',
-                style: TextStyle(
-                    color: Color(0XFF2E3E5C),
-                    fontSize: 15,
-                    fontWeight: FontWeight.bold),
-              )),
+          Container(
+            width: 156,
+            height: 56,
+            decoration: BoxDecoration(color: kwhite),
+            child: TextButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: Text(
+                  'Kembali',
+                  style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold,
+                      color: kgreyBack),
+                )),
+          ),
           custom_button(
+            warna: kgreen,
+            width: 156,
             text: 'Simpan',
             onPressed: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const SignIn_Page()));
+              if (_formKey.currentState!.validate()) {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const SignInPage()));
+              }
             },
-            width: 156,
           ),
         ],
       ),

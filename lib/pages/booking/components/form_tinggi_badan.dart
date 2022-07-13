@@ -12,9 +12,9 @@ class FormTb extends StatelessWidget {
       padding: const EdgeInsets.only(
         left: 24,
         right: 24,
-        top: 10,
       ),
       child: Custom_Form_Suf(
+          textValue: 'Isi tinggi badan',
           hintText: '175 Cm',
           icon: Icon(
             Icons.height,
