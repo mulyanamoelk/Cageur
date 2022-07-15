@@ -16,7 +16,7 @@ class Section_Specialis extends StatelessWidget {
           InkWell(
             onTap: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => Booking_Page()));
+                  MaterialPageRoute(builder: (context) => BookingPage()));
             },
             child: Column(
               children: [

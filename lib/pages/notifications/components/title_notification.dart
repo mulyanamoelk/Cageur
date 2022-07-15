@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:sistem_antrian/styles/custom_font_style.dart';
 
-class title_notification extends StatelessWidget {
-  const title_notification({
+class TitleNotification extends StatelessWidget {
+  const TitleNotification({
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(
-        top: 50,
-      ),
+    return Container(
+      margin: EdgeInsets.only(top: 50, bottom: 24),
       child: Center(
         child: Text(
           'Bookings',

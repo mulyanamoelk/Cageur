@@ -14,8 +14,6 @@ class Hero_Details extends StatelessWidget {
       children: [
         Image.asset(
           'assets/images/rumahSakit.png',
-          width: 444,
-          height: 286,
         ),
         Positioned(
             top: 30,
@@ -23,7 +21,9 @@ class Hero_Details extends StatelessWidget {
             child: CircleAvatar(
                 backgroundColor: kwhite,
                 child: IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
                     icon: Icon(
                       Icons.arrow_back_ios_new,
                       color: kgrey,

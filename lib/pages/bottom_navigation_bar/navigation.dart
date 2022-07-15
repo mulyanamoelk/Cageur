@@ -21,7 +21,7 @@ class _Convex_Navigation_BarState extends State<Convex_Navigation_Bar> {
     home_page(),
     History_Page(),
     Search_Page(),
-    Notification_Page(),
+    NotificationPage(),
     Profile()
   ];
   @override

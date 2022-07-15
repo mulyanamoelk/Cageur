@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       routes: {
         'bottom_navigation': (BuildContext context) => Convex_Navigation_Bar(),
         'home': (BuildContext contex) => home_page(),
-        'details': (BuildContext context) => Detail_Page()
+        'details': (BuildContext context) => DetailPage()
       },
       home: splash_satu(),
     );

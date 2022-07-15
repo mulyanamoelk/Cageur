@@ -13,8 +13,7 @@ class Body_Detail_Page extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-        child: Column(
+    return ListView(
       children: [
         Hero_Details(),
         Expanded(
@@ -43,6 +42,6 @@ class Body_Detail_Page extends StatelessWidget {
           ),
         ))
       ],
-    ));
+    );
   }
 }

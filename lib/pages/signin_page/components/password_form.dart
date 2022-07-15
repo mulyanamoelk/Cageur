@@ -34,7 +34,10 @@ class _FormPasswordState extends State<FormPassword> {
                 _isHidePassword ? Icons.visibility_off : Icons.visibility,
                 color: _isHidePassword ? kgrey : kgreen,
               )),
-          iconsPre: Icon(Icons.lock),
+          iconsPre: Icon(
+            Icons.lock,
+            color: kgreen,
+          ),
           Obscure: _isHidePassword,
           ValidatorValue: 'Isi password'),
     );

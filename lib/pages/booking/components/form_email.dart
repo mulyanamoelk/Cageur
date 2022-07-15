@@ -17,7 +17,7 @@ class FormEmail extends StatelessWidget {
           textValue: 'Isi Email',
           hintText: 'Cageur@gmail.com',
           icon: Icon(
-            Icons.phone,
+            Icons.mail,
             color: kgreen,
           ),
           typeInput: TextInputType.emailAddress),

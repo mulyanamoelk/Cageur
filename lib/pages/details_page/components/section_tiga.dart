@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:sistem_antrian/pages/booking/booking.dart';
+import 'package:sistem_antrian/pages/signin_page/signin_page.dart';
 
 import '../../../styles/custom_font_style.dart';
 
@@ -15,7 +17,10 @@ class Section_Tiga extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           InkWell(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const SignInPage()));
+            },
             child: Column(
               children: [
                 Image.asset(

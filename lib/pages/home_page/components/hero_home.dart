@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sistem_antrian/pages/details_page/details_page.dart';
 import 'package:sistem_antrian/styles/constrans.dart';
 
 class Hero_Home extends StatelessWidget {
@@ -31,7 +32,13 @@ class Hero_Home extends StatelessWidget {
                             color: kgreen,
                             borderRadius: BorderRadius.circular(32)),
                         child: TextButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          const DetailPage()));
+                            },
                             child: Text(
                               'Selengkapnya',
                               style: TextStyle(

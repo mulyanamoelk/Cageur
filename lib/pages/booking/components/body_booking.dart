@@ -1,5 +1,7 @@
+import 'package:cool_alert/cool_alert.dart';
 import 'package:flutter/material.dart';
 import 'package:getwidget/components/dropdown/gf_dropdown.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
 import 'package:sistem_antrian/pages/booking/components/button_booking.dart';
 import 'package:sistem_antrian/pages/booking/components/dropdown_pribadi.dart';
 import 'package:sistem_antrian/pages/booking/components/form_berat_badan.dart';
@@ -31,6 +33,14 @@ class BodyBooking extends StatefulWidget {
 
 class _BodyBookingState extends State<BodyBooking> {
   final _formKey = GlobalKey<FormState>();
+  final TextEditingController _nikController = TextEditingController();
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    _nikController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -58,7 +68,6 @@ class _BodyBookingState extends State<BodyBooking> {
                     ToggleBooking(),
                     DropdownPribadi(),
                     TitleForm(),
-                    FormNik(),
                     FormPerson(),
                     FormPhone(),
                     FormEmail(),

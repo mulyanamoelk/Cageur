@@ -25,6 +25,7 @@ class Section_Empat extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               InkWell(
+                onTap: () {},
                 child: Column(
                   children: [
                     Image.asset(
@@ -40,6 +41,7 @@ class Section_Empat extends StatelessWidget {
                 ),
               ),
               InkWell(
+                onTap: () {},
                 child: Column(
                   children: [
                     Image.asset(
@@ -55,6 +57,7 @@ class Section_Empat extends StatelessWidget {
                 ),
               ),
               InkWell(
+                onTap: () {},
                 child: Column(
                   children: [
                     Image.asset(
@@ -70,6 +73,7 @@ class Section_Empat extends StatelessWidget {
                 ),
               ),
               InkWell(
+                onTap: () {},
                 child: Column(
                   children: [
                     Image.asset(

@@ -32,3 +32,7 @@ TextStyle get font_sub_title_notification {
   return TextStyle(
       fontSize: 18, color: kpurpleText, fontWeight: FontWeight.bold);
 }
+
+TextStyle get FontSukses {
+  return TextStyle(color: kgreyText, fontSize: 13);
+}

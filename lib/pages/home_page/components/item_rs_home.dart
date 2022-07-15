@@ -15,7 +15,7 @@ class Item_Rs_Home extends StatelessWidget {
       },
       {
         'image': 'assets/images/rsih.png',
-        'text': 'RS Nurhayati',
+        'text': 'Ahclan Medica',
         "link": "/navbar"
       },
       {
@@ -95,9 +95,7 @@ class CategoryCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (() {
-        press;
-      }),
+      onTap: press,
       child: SizedBox(
           width: 120,
           height: 150,

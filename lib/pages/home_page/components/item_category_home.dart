@@ -7,10 +7,10 @@ class kategori_specialis extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<Map<String, dynamic>> categori = [
-      {'image': "assets/images/bedah.png", "text": "Bedah"},
-      {'image': "assets/images/bedah.png", "text": "Bedah"},
-      {'image': "assets/images/bedah.png", "text": "Bedah"},
-      {'image': "assets/images/bedah.png", "text": "Bedah"},
+      {'image': "assets/images/dalam.png", "text": "Penyakit \n dalam"},
+      {'image': "assets/images/dokter.png", "text": " Dokter \n Umum"},
+      {'image': "assets/images/jiwa.png", "text": "Kedokteran \n jiwa"},
+      {'image': "assets/images/bedah.png", "text": "Bedah \n Syaraf"},
       {'image': "assets/images/bedah.png", "text": "Bedah"},
       {'image': "assets/images/bedah.png", "text": "Bedah"},
       {'image': "assets/images/bedah.png", "text": "Bedah"},
@@ -47,24 +47,26 @@ class Specialis extends StatelessWidget {
       onTap: press,
       child: SizedBox(
         width: 80,
-        height: 130,
+        height: 150,
         child: Column(
           children: [
-            Padding(
-              padding: EdgeInsets.all(5),
-              child: ClipRRect(
-                borderRadius: BorderRadius.all(
-                  Radius.circular(66),
+            Container(
+                padding: EdgeInsets.only(
+                  left: 3,
                 ),
-                child: Image.asset(image!),
-              ),
-            ),
-            SizedBox(
-              height: 4,
-            ),
+                child: CircleAvatar(
+                  foregroundColor: kblack,
+                  radius: 50,
+                  backgroundColor: kgreen,
+                  child: Image.asset(
+                    image!,
+                    width: 57,
+                  ),
+                )),
             Text(
+              textAlign: TextAlign.center,
               text!,
-              style: TextStyle(color: kblack, fontSize: 16),
+              style: TextStyle(color: kblack, fontSize: 12),
             )
           ],
         ),

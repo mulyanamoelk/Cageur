@@ -8,6 +8,7 @@ class Custom_Form_Suf extends StatelessWidget {
   final TextInputType typeInput;
   final String hintText;
   final bool obscure;
+
   const Custom_Form_Suf({
     Key? key,
     required this.hintText,

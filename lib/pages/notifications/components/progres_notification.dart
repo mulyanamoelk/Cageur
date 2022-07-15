@@ -3,8 +3,8 @@ import 'package:getwidget/components/progress_bar/gf_progress_bar.dart';
 
 import '../../../styles/constrans.dart';
 
-class progresNotification extends StatelessWidget {
-  const progresNotification({
+class ProgresNotification extends StatelessWidget {
+  const ProgresNotification({
     Key? key,
   }) : super(key: key);
 
