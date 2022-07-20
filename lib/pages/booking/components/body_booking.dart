@@ -68,6 +68,7 @@ class _BodyBookingState extends State<BodyBooking> {
                     ToggleBooking(),
                     DropdownPribadi(),
                     TitleForm(),
+                    FormNik(),
                     FormPerson(),
                     FormPhone(),
                     FormEmail(),

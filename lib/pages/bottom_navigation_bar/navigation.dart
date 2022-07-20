@@ -22,7 +22,7 @@ class _Convex_Navigation_BarState extends State<Convex_Navigation_Bar> {
     History_Page(),
     Search_Page(),
     NotificationPage(),
-    Profile()
+    ProfilePage()
   ];
   @override
   void initState() {

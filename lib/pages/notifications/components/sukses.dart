@@ -44,6 +44,7 @@ class Section4Success extends StatelessWidget {
                 border: Border.all(color: kgrey, width: 1)),
             child: Center(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
                     '13',

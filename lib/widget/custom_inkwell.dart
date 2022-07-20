@@ -29,7 +29,7 @@ class CustomInkwellChat extends StatelessWidget {
           Text(
             texts,
             style: TextStyle(
-                fontSize: 12, color: kgreyText, fontWeight: FontWeight.bold),
+                fontSize: 12, color: kpurple, fontWeight: FontWeight.bold),
           )
         ],
       ),

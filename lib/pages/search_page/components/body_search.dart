@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sistem_antrian/pages/search_page/components/listview_dokter.dart';
-import 'package:sistem_antrian/pages/search_page/components/item_dokter.dart';
+
 import 'package:sistem_antrian/pages/search_page/components/search_form.dart';
 import 'package:sistem_antrian/pages/search_page/components/section_specialis.dart';
 import 'package:sistem_antrian/pages/search_page/components/title_klinik_search.dart';
@@ -18,7 +18,7 @@ class Body_Search extends StatelessWidget {
     return SafeArea(
         child: Column(children: [
       Title_Search(),
-      Search_Form(),
+      SearchForm(),
       Title_klinik_Search(),
       Section_Specialis(),
       Title_Recomm(),

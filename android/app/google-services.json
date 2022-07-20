@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "951794961392",
+    "project_id": "cageur-3c2b3",
+    "storage_bucket": "cageur-3c2b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951794961392:android:b75274bb3b4d3a85fdab35",
+        "android_client_info": {
+          "package_name": "com.example.sistem_antrian"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951794961392-s2uef7eogh9sb5m1di2mbg2n4rscfmi4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtkB2k4WUlqMAliJQROBLBEHcNsyWjhQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951794961392-s2uef7eogh9sb5m1di2mbg2n4rscfmi4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

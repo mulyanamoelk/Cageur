@@ -6,7 +6,6 @@ import 'package:sistem_antrian/pages/home_page/components/item_rs_home.dart';
 import 'package:sistem_antrian/pages/home_page/components/section_title_home.dart';
 import 'package:sistem_antrian/pages/home_page/components/title_category_home.dart';
 import 'package:sistem_antrian/pages/home_page/components/title_promo_home.dart';
-import 'package:sistem_antrian/pages/home_page/components/title_rs_home.dart';
 
 import 'package:sistem_antrian/widget/custom_button.dart';
 import 'package:sistem_antrian/styles/custom_font_style.dart';
@@ -25,7 +24,6 @@ class body_home extends StatelessWidget {
           scrollDirection: Axis.vertical,
           child: Column(
             children: [
-              title_rs_home(),
               Item_Rs_Home(),
               title_category_home(),
               kategori_specialis(),

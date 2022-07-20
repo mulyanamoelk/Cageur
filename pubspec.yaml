@@ -43,6 +43,14 @@ dependencies:
   cool_alert: ^1.1.0
   #calender
   table_calendar: ^3.0.6
+  #google
+  google_sign_in: ^5.4.0
+  firebase_auth: ^3.4.2
+  firebase_core: ^1.19.2
+  #timeline
+  timeline_tile: ^2.0.0
+  #socket web
+  shelf_web_socket: ^1.0.2
   toggle_switch: ^2.0.1
   flutter_svg: ^1.0.3
   getwidget: ^2.0.5

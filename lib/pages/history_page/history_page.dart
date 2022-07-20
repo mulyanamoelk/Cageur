@@ -41,7 +41,7 @@ class History_Page extends StatelessWidget {
                       indicator: BoxDecoration(
                           color: kgreyText,
                           borderRadius: BorderRadius.circular(32)),
-                      labelColor: kgreen,
+                      labelColor: kwhite,
                       unselectedLabelColor: kpurple,
                       tabs: <Widget>[
                         Tab(

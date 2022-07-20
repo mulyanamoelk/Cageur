@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_share/flutter_share.dart';
 import 'package:sistem_antrian/pages/profile_page/components/popup_menu_profile.dart';
+import 'package:sistem_antrian/pages/profile_page/components/syarat_ketentuan.dart';
 
 import '../../../styles/constrans.dart';
 
@@ -24,7 +25,7 @@ class PopupProfil extends StatelessWidget {
         PopupMenuItem(
             child: ListTile(
           leading: IconButton(
-              onPressed: () {},
+              onPressed: share,
               icon: Icon(
                 Icons.person,
                 color: kgrey,
@@ -44,12 +45,15 @@ class PopupProfil extends StatelessWidget {
         PopupMenuItem(
             child: ListTile(
           leading: IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => SyaratKetentuan()));
+              },
               icon: Icon(
-                Icons.logout,
+                Icons.bookmark,
                 color: kgrey,
               )),
-          title: Text('Logout'),
+          title: Text('Syarat & Ketentuan'),
         )),
       ],
       icons: Icon(

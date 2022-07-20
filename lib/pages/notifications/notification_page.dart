@@ -7,6 +7,7 @@ import 'package:sistem_antrian/pages/notifications/components/progres_notificati
 import 'package:sistem_antrian/pages/notifications/components/sukses.dart';
 import 'package:sistem_antrian/pages/notifications/components/title_notification.dart';
 import 'package:sistem_antrian/pages/profile_page/profile.dart';
+import 'package:timeline_tile/timeline_tile.dart';
 
 import '../../styles/constrans.dart';
 
@@ -19,6 +20,11 @@ class NotificationPage extends StatefulWidget {
 
 class _NotificationPageState extends State<NotificationPage>
     with SingleTickerProviderStateMixin {
+  int _currentStep = 0;
+  List<Step> step = <Step>[
+    Step(title: Text('Diproses'), content: Text('data')),
+    Step(title: Text('Diproses'), content: Text('data'))
+  ];
   late TabController tabController;
   @override
   void initState() {
@@ -35,7 +41,7 @@ class _NotificationPageState extends State<NotificationPage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Padding(
+      body: Container(
         padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
@@ -62,7 +68,34 @@ class _NotificationPageState extends State<NotificationPage>
                     )
                   ]),
             ),
-            ProgresNotification(),
+            Container(
+              height: 30,
+              width: 300,
+              margin: EdgeInsets.only(top: 10),
+              child: Row(
+                children: [
+                  TimelineTile(
+                      isFirst: true,
+                      axis: TimelineAxis.horizontal,
+                      alignment: TimelineAlign.start,
+                      indicatorStyle:
+                          const IndicatorStyle(width: 100, color: kgrey)),
+                  TimelineTile(
+                      afterLineStyle: LineStyle(color: kgreen),
+                      axis: TimelineAxis.horizontal,
+                      indicatorStyle:
+                          const IndicatorStyle(width: 100, color: kgrey)),
+                  TimelineTile(
+                      beforeLineStyle: LineStyle(
+                        color: kgreen,
+                      ),
+                      isLast: true,
+                      axis: TimelineAxis.horizontal,
+                      indicatorStyle:
+                          const IndicatorStyle(width: 100, color: kgrey)),
+                ],
+              ),
+            ),
             Expanded(
                 child: TabBarView(
                     controller: tabController,

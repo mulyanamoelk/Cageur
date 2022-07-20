@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:sistem_antrian/models/dokter.dart';
 import 'package:sistem_antrian/widget/custom_form.dart';
 
 import '../../../styles/constrans.dart';
 
-class Search_Form extends StatelessWidget {
-  const Search_Form({
-    Key? key,
-  }) : super(key: key);
+class SearchForm extends StatefulWidget {
+  const SearchForm({Key? key}) : super(key: key);
 
+  @override
+  State<SearchForm> createState() => _SearchFormState();
+}
+
+class _SearchFormState extends State<SearchForm> {
   @override
   Widget build(BuildContext context) {
     return Container(

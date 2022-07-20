@@ -46,23 +46,29 @@ class Specialis extends StatelessWidget {
     return GestureDetector(
       onTap: press,
       child: SizedBox(
-        width: 80,
         height: 150,
         child: Column(
           children: [
-            Container(
-                padding: EdgeInsets.only(
-                  left: 3,
-                ),
-                child: CircleAvatar(
-                  foregroundColor: kblack,
-                  radius: 50,
-                  backgroundColor: kgreen,
-                  child: Image.asset(
-                    image!,
-                    width: 57,
+            Padding(
+              padding: const EdgeInsets.all(2.0),
+              child: Container(
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(90),
+                    color: kwhite,
+                    border: Border.all(color: kgreen2, width: 1)),
+                child: Padding(
+                  padding: const EdgeInsets.all(3.0),
+                  child: CircleAvatar(
+                    backgroundColor: kgreen,
+                    radius: 40,
+                    child: Image.asset(
+                      image!,
+                      width: 78,
+                    ),
                   ),
-                )),
+                ),
+              ),
+            ),
             Text(
               textAlign: TextAlign.center,
               text!,

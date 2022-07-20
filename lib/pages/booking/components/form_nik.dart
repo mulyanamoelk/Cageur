@@ -16,7 +16,7 @@ class FormNik extends StatelessWidget {
           textValue: 'Isi NIK',
           hintText: 'NIK',
           icon: Icon(
-            Icons.tag,
+            Icons.credit_card,
             color: kgreen,
           ),
           typeInput: TextInputType.number),

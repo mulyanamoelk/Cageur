@@ -9,8 +9,23 @@ import 'package:sistem_antrian/widget/custom_inkwell.dart';
 
 import '../../styles/constrans.dart';
 
-class Profile extends StatelessWidget {
-  const Profile({Key? key}) : super(key: key);
+class ProfilePage extends StatefulWidget {
+  const ProfilePage({Key? key}) : super(key: key);
+
+  @override
+  State<ProfilePage> createState() => _ProfilePageState();
+}
+
+class _ProfilePageState extends State<ProfilePage> {
+  String images = 'assets/images/jhon.png';
+  String name = 'Mulyana';
+  String phone = '089662548161';
+  String nik = '3205050107990055';
+  String email = "mulyana@gmail.com";
+
+  List<Map<String, dynamic>> alamat = [
+    {"alamat": "Kp. Genteng", "rt/rw": "003/013"}
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -35,89 +50,115 @@ class Profile extends StatelessWidget {
             Positioned(
               child: ListView(
                 children: [
-                  Container(
-                    child: Column(
-                      children: [
-                        CircleAvatar(
-                          radius: 60,
-                          child: Image.asset('assets/images/jhon.png'),
-                        ),
-                        SizedBox(
-                          height: 20,
-                        ),
-                        Text(
-                          'Doni Setiadi',
-                          style: TextStyle(
-                              color: kgreyText,
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold),
-                        )
-                      ],
-                    ),
+                  CircleAvatar(
+                    radius: 60,
+                    child: Image.asset(images),
                   ),
                   SizedBox(
-                    height: 50,
+                    height: 20,
                   ),
-                  Container(
-                    margin: EdgeInsets.only(left: 54, right: 24),
-                    child: Column(
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            Icon(
-                              Icons.phone,
-                              color: kgreen,
-                            ),
-                            SizedBox(
-                              width: 10,
-                            ),
-                            Text('+6289662548161',
-                                style: TextStyle(color: kgrey, fontSize: 15))
-                          ],
-                        ),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            Icon(
-                              Icons.mail,
-                              color: kgreen,
-                            ),
-                            SizedBox(
-                              width: 10,
-                            ),
-                            Text('cageur@gmail.com',
-                                style: TextStyle(color: kgrey, fontSize: 15))
-                          ],
-                        ),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            Icon(
-                              Icons.tag,
-                              color: kgreen,
-                            ),
-                            SizedBox(
-                              width: 10,
-                            ),
-                            Text(
-                              '3205050107990055',
-                              style: TextStyle(color: kgrey, fontSize: 15),
-                            )
-                          ],
-                        )
-                      ],
+                  Center(
+                    child: Text(
+                      name,
+                      style: TextStyle(color: kpurple, fontSize: 17),
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
+            Positioned(
+                top: 255,
+                left: 24,
+                child: Container(
+                  height: 300,
+                  width: 300,
+                  margin: EdgeInsets.only(
+                    left: 24,
+                    top: 24,
+                  ),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(17),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.only(
+                        left: 24, top: 15, right: 10, bottom: 10),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Text(
+                                textAlign: TextAlign.start,
+                                nik,
+                                style: TextStyle(color: kpurple, fontSize: 15)),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 24,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Text(
+                                textAlign: TextAlign.start,
+                                phone,
+                                style: TextStyle(color: kpurple, fontSize: 15)),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 24,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Text(
+                                textAlign: TextAlign.start,
+                                email,
+                                style: TextStyle(color: kpurple, fontSize: 15)),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                )),
+            Positioned(
+                top: 290,
+                left: 33,
+                child: Column(
+                  children: [
+                    CircleAvatar(
+                      radius: 15,
+                      backgroundColor: kwhite,
+                      child: Icon(
+                        Icons.credit_card,
+                        color: kgreen,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    CircleAvatar(
+                      radius: 15,
+                      backgroundColor: kwhite,
+                      child: Icon(
+                        Icons.phone,
+                        color: kgreen,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    CircleAvatar(
+                      radius: 15,
+                      backgroundColor: kwhite,
+                      child: Icon(
+                        Icons.mail,
+                        color: kgreen,
+                      ),
+                    ),
+                  ],
+                )),
             Positioned(
                 right: 20,
                 top: 300,

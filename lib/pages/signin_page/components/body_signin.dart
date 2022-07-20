@@ -26,23 +26,25 @@ class _BodySignInState extends State<BodySignIn> {
   final _formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: [
-        Title_Signin(),
-        Form(
-            key: _formKey,
-            child: Column(
-              children: [
-                Email_Form(),
-                FormPassword(),
-              ],
-            )),
-        Forgot_Password(),
-        ButtonSignIn(formKey: _formKey),
-        Option(),
-        Button_Google(),
-        Option_Belum()
-      ],
+    return Scaffold(
+      body: ListView(
+        children: [
+          Title_Signin(),
+          Form(
+              key: _formKey,
+              child: Column(
+                children: [
+                  Email_Form(),
+                  FormPassword(),
+                ],
+              )),
+          Forgot_Password(),
+          ButtonSignIn(formKey: _formKey),
+          Option(),
+          ButtonGoogle(),
+          Option_Belum()
+        ],
+      ),
     );
   }
 }
