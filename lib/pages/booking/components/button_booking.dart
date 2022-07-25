@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:sistem_antrian/pages/bottom_navigation_bar/navigation.dart';
 import 'package:sistem_antrian/pages/jadwal_page/atur_jadwal.dart';
+import 'package:sistem_antrian/pages/notifications/notification_page.dart';
 import 'package:sistem_antrian/pages/signin_page/signin_page.dart';
 
 import '../../../styles/constrans.dart';
@@ -38,6 +40,7 @@ class ButtonBooking extends StatelessWidget {
                 )),
           ),
           custom_button(
+            textcolors: kwhite,
             warna: kgreen,
             width: 156,
             text: 'Simpan',
@@ -46,11 +49,23 @@ class ButtonBooking extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const AturJadwal()));
+                        builder: (context) => const ConvexNavigationBar()));
               }
             },
           ),
         ],
+      ),
+    );
+  }
+
+  _AlertSucces() {
+    return Dialog(
+      insetPadding: EdgeInsets.all(15),
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(17),
+          side: BorderSide(color: kgrey, width: 1)),
+      child: Column(
+        children: [],
       ),
     );
   }

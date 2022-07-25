@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sistem_antrian/pages/booking/booking.dart';
 import 'package:sistem_antrian/pages/bottom_navigation_bar/navigation.dart';
+import 'package:sistem_antrian/pages/jadwal_page/atur_jadwal.dart';
 import 'package:sistem_antrian/pages/search_page/search_page.dart';
 import 'package:sistem_antrian/pages/signup_page/signup.dart';
 import 'package:sistem_antrian/styles/constrans.dart';
@@ -20,11 +21,12 @@ class ButtonSignIn extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 24, right: 24),
       child: custom_button(
+          textcolors: kwhite,
           text: 'Login',
           onPressed: () {
             if (_formKey.currentState!.validate()) {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const Search_Page()));
+              Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => const BookingPage()));
             }
           },
           warna: kgreen),

@@ -32,6 +32,7 @@ class _BodySignUpState extends State<BodySignUp> {
             child: Column(
               children: [
                 Title_SignUp(),
+                Form_NIK(),
                 Form_Email(),
                 Form_Phone(),
                 FormPassword(),
@@ -39,6 +40,7 @@ class _BodySignUpState extends State<BodySignUp> {
                 Padding(
                   padding: const EdgeInsets.only(top: 50, left: 24, right: 24),
                   child: custom_button(
+                      textcolors: kwhite,
                       text: 'SignUp',
                       onPressed: () {
                         if (_formKey.currentState!.validate()) {
@@ -54,6 +56,27 @@ class _BodySignUpState extends State<BodySignUp> {
               ],
             ))
       ],
+    );
+  }
+}
+
+class Form_NIK extends StatelessWidget {
+  const Form_NIK({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(left: 24, right: 24, top: 30),
+      child: Custom_Form_Suf(
+          hintText: 'NIK',
+          icon: Icon(
+            Icons.credit_card,
+            color: kgreen,
+          ),
+          typeInput: TextInputType.emailAddress,
+          textValue: 'Isi NIK'),
     );
   }
 }

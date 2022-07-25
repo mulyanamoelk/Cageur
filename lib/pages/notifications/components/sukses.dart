@@ -37,7 +37,7 @@ class Section4Success extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
-            width: 37,
+            width: 38,
             height: 42,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(5),
@@ -48,9 +48,11 @@ class Section4Success extends StatelessWidget {
                 children: [
                   Text(
                     '13',
+                    textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                   ),
                   Text(
+                    textAlign: TextAlign.center,
                     'Maret',
                     style: TextStyle(fontSize: 9),
                   )

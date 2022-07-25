@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sistem_antrian/Widget/custom_button.dart';
 import 'package:sistem_antrian/pages/booking/booking.dart';
+import 'package:sistem_antrian/pages/chat/chat.dart';
 import 'package:sistem_antrian/pages/history_page/components/history_dokter.dart';
 import 'package:sistem_antrian/pages/profile_page/components/popup_menu.dart';
 import 'package:sistem_antrian/pages/profile_page/components/popup_menu_profile.dart';
@@ -131,7 +132,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       radius: 15,
                       backgroundColor: kwhite,
                       child: Icon(
-                        Icons.credit_card,
+                        Icons.tag,
                         color: kgreen,
                       ),
                     ),
@@ -170,7 +171,10 @@ class _ProfilePageState extends State<ProfilePage> {
                           icons: Icon(
                             Icons.chat,
                           ),
-                          ontaps: () {}),
+                          ontaps: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => const ChatPage()));
+                          }),
                       CustomInkwellChat(
                           texts: 'Booking',
                           icons: Icon(Icons.calendar_month),

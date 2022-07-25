@@ -1,7 +1,7 @@
 import 'package:cool_alert/cool_alert.dart';
 import 'package:flutter/material.dart';
 import 'package:getwidget/components/dropdown/gf_dropdown.dart';
-import 'package:rflutter_alert/rflutter_alert.dart';
+
 import 'package:sistem_antrian/pages/booking/components/button_booking.dart';
 import 'package:sistem_antrian/pages/booking/components/dropdown_pribadi.dart';
 import 'package:sistem_antrian/pages/booking/components/form_berat_badan.dart';

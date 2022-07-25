@@ -77,7 +77,10 @@ class UpdateProfile extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(top: 30),
                   child: custom_button(
-                      text: 'Update', onPressed: () {}, warna: kgreen),
+                      textcolors: kwhite,
+                      text: 'Update',
+                      onPressed: () {},
+                      warna: kgreen),
                 )
               ],
             ))

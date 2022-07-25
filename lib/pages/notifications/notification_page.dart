@@ -41,6 +41,18 @@ class _NotificationPageState extends State<NotificationPage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: kwhite,
+        elevation: 0,
+        leading: IconButton(
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+            icon: Icon(
+              Icons.arrow_back_ios_new,
+              color: kgrey,
+            )),
+      ),
       body: Container(
         padding: const EdgeInsets.all(8.0),
         child: Column(

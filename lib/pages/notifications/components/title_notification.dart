@@ -9,7 +9,7 @@ class TitleNotification extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 50, bottom: 24),
+      margin: EdgeInsets.only(bottom: 24),
       child: Center(
         child: Text(
           'Bookings',

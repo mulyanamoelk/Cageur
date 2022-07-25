@@ -20,7 +20,7 @@ List<Dokter> dokters = [
       images: 'assets/images/anak.png',
       name: 'Sinta',
       department: 'Dokter Anak',
-      str: 'STR1234567890',
+      str: 'STR, 12334455656',
       tahun: '9 Tahun',
       jam: '08:00 AM - 11:00 AM'),
 ];

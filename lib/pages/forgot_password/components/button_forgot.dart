@@ -12,6 +12,10 @@ class ButtonForgots extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
         padding: const EdgeInsets.only(left: 24, right: 24, top: 40),
-        child: custom_button(text: 'Submit', onPressed: () {}, warna: kgreen));
+        child: custom_button(
+            textcolors: kwhite,
+            text: 'Submit',
+            onPressed: () {},
+            warna: kgreen));
   }
 }

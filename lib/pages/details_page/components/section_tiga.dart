@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sistem_antrian/pages/booking/booking.dart';
+import 'package:sistem_antrian/pages/jadwal_page/atur_jadwal.dart';
 import 'package:sistem_antrian/pages/signin_page/signin_page.dart';
 
 import '../../../styles/custom_font_style.dart';
@@ -19,7 +20,7 @@ class Section_Tiga extends StatelessWidget {
           InkWell(
             onTap: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const SignInPage()));
+                  MaterialPageRoute(builder: (context) => const AturJadwal()));
             },
             child: Column(
               children: [

@@ -23,7 +23,10 @@ class Section_Kedua extends StatelessWidget {
           Container(
             child: Column(
               children: [
-                Text('Maps'),
+                TextButton(
+                  onPressed: () {},
+                  child: Text('Maps'),
+                ),
                 SizedBox(
                   height: 5,
                 ),

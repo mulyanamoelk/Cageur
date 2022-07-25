@@ -59,7 +59,7 @@ class _splash_secondState extends State<splash_second> {
                                         context,
                                         MaterialPageRoute(
                                             builder: (context) =>
-                                                const Convex_Navigation_Bar()));
+                                                const ConvexNavigationBar()));
                                   },
                                   child: Text(
                                     'Mulai',

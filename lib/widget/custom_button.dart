@@ -6,7 +6,7 @@ class custom_button extends StatelessWidget {
   final double width;
   final Function() onPressed;
   final EdgeInsets margin;
-  final Color warna;
+  final Color warna, textcolors;
 
   const custom_button(
       {Key? key,
@@ -14,7 +14,8 @@ class custom_button extends StatelessWidget {
       this.width = double.infinity,
       required this.onPressed,
       this.margin = EdgeInsets.zero,
-      required this.warna})
+      required this.warna,
+      required this.textcolors})
       : super(key: key);
 
   @override
@@ -29,7 +30,7 @@ class custom_button extends StatelessWidget {
           child: Text(
             text,
             style: TextStyle(
-                color: kwhite, fontSize: 15, fontWeight: FontWeight.bold),
+                color: textcolors, fontSize: 15, fontWeight: FontWeight.bold),
           )),
     );
   }

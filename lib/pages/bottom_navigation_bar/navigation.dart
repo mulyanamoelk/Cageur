@@ -8,14 +8,14 @@ import 'package:sistem_antrian/pages/profile_page/profile.dart';
 import 'package:sistem_antrian/pages/search_page/search_page.dart';
 import 'package:sistem_antrian/styles/constrans.dart';
 
-class Convex_Navigation_Bar extends StatefulWidget {
-  const Convex_Navigation_Bar({Key? key}) : super(key: key);
+class ConvexNavigationBar extends StatefulWidget {
+  const ConvexNavigationBar({Key? key}) : super(key: key);
 
   @override
-  State<Convex_Navigation_Bar> createState() => _Convex_Navigation_BarState();
+  State<ConvexNavigationBar> createState() => _ConvexNavigationBarState();
 }
 
-class _Convex_Navigation_BarState extends State<Convex_Navigation_Bar> {
+class _ConvexNavigationBarState extends State<ConvexNavigationBar> {
   late int index;
   List pages = [
     home_page(),

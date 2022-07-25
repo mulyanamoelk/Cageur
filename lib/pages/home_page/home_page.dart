@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rating_dialog/rating_dialog.dart';
 import 'package:sistem_antrian/pages/home_page/components/body_home.dart';
 import 'package:sistem_antrian/styles/constrans.dart';
 
@@ -19,11 +20,21 @@ class home_page extends StatelessWidget {
             )),
         actions: [
           IconButton(
-              onPressed: () {},
+              onPressed: () {
+                openRatting(context);
+              },
               icon: Icon(Icons.favorite_border_outlined, color: kpurple))
         ],
       ),
       body: body_home(),
     );
+  }
+
+  openRatting(BuildContext context) {
+    showDialog(
+        context: context,
+        builder: (context) {
+          return Container();
+        });
   }
 }

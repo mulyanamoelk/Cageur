@@ -11,6 +11,11 @@ class ButtonNext extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
         padding: const EdgeInsets.only(left: 24, right: 24, top: 30),
-        child: custom_button(text: 'Next', onPressed: () {}, warna: kgreen));
+        child: custom_button(
+          text: 'Next',
+          onPressed: () {},
+          warna: kgreen,
+          textcolors: kwhite,
+        ));
   }
 }

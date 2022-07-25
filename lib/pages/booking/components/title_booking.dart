@@ -8,7 +8,7 @@ class Title_Booking extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 28, top: 26),
+      padding: const EdgeInsets.only(left: 28, top: 10, bottom: 24),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

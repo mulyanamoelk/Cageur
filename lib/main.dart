@@ -33,7 +33,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: 'Poppins'),
       routes: {
-        'bottom_navigation': (BuildContext context) => Convex_Navigation_Bar(),
+        'bottom_navigation': (BuildContext context) =>
+            const ConvexNavigationBar(),
         'home': (BuildContext contex) => home_page(),
         'details': (BuildContext context) => DetailPage()
       },
