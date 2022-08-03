@@ -23,9 +23,12 @@ class Section_Kedua extends StatelessWidget {
           Container(
             child: Column(
               children: [
-                TextButton(
-                  onPressed: () {},
-                  child: Text('Maps'),
+                InkWell(
+                  child: ImageIcon(
+                      AssetImage(
+                        'assets/images/location.png',
+                      ),
+                      color: kgreen),
                 ),
                 SizedBox(
                   height: 5,

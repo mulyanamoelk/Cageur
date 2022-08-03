@@ -41,19 +41,42 @@ class _ButtonGoogleState extends State<ButtonGoogle> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.only(left: 24, right: 24),
-      width: double.infinity,
-      height: 56,
-      decoration: BoxDecoration(
-          color: korange, borderRadius: BorderRadius.circular(32)),
-      child: TextButton(
-          onPressed: () => _handleSignIn(),
-          child: Text(
-            'Google',
-            style: TextStyle(
-                color: kwhite, fontSize: 15, fontWeight: FontWeight.bold),
-          )),
-    );
+    return _currentUser == null
+        ? Container(
+            margin: EdgeInsets.only(left: 24, right: 24),
+            width: double.infinity,
+            height: 56,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                InkWell(
+                    onTap: () => _handleSignIn(),
+                    child: CircleAvatar(
+                      backgroundColor: kwhite,
+                      child: Image.asset(
+                        'assets/images/google.png',
+                        width: 35,
+                      ),
+                    )),
+                SizedBox(
+                  width: 25,
+                ),
+                InkWell(
+                    child: CircleAvatar(
+                  backgroundColor: kwhite,
+                  child: Image.asset(
+                    'assets/images/facebook.png',
+                    width: 35,
+                  ),
+                )),
+              ],
+            ))
+        : Container(
+            child: ListTile(
+              leading: GoogleUserCircleAvatar(identity: _currentUser!),
+              title: Text(_currentUser!.displayName ?? ''),
+              subtitle: Text(_currentUser!.email),
+            ),
+          );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:sistem_antrian/pages/password_verification/components/verification_code_sms.dart';
 import 'package:sistem_antrian/pages/signin_page/signin_page.dart';
 import 'package:sistem_antrian/pages/signup_page/components/button_signUp.dart';
 import 'package:sistem_antrian/pages/signup_page/components/form_email.dart';
@@ -8,6 +9,7 @@ import 'package:sistem_antrian/pages/signup_page/components/form_phone.dart';
 import 'package:sistem_antrian/pages/signup_page/components/form_ulangi_password.dart';
 import 'package:sistem_antrian/pages/signup_page/components/option_account.dart';
 import 'package:sistem_antrian/pages/signup_page/components/title_signup.dart';
+
 import 'package:sistem_antrian/styles/constrans.dart';
 import 'package:sistem_antrian/styles/custom_font_style.dart';
 import 'package:sistem_antrian/widget/custom_button.dart';
@@ -37,25 +39,38 @@ class _BodySignUpState extends State<BodySignUp> {
                 Form_Phone(),
                 FormPassword(),
                 FormTryPassword(),
-                Padding(
-                  padding: const EdgeInsets.only(top: 50, left: 24, right: 24),
-                  child: custom_button(
-                      textcolors: kwhite,
-                      text: 'SignUp',
-                      onPressed: () {
-                        if (_formKey.currentState!.validate()) {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => SignInPage()));
-                        }
-                      },
-                      warna: kgreen),
-                ),
+                ButtonSignUp(formKey: _formKey),
                 Sudah_Punya()
               ],
             ))
       ],
+    );
+  }
+}
+
+class ButtonSignUp extends StatelessWidget {
+  const ButtonSignUp({
+    Key? key,
+    required GlobalKey<FormState> formKey,
+  })  : _formKey = formKey,
+        super(key: key);
+
+  final GlobalKey<FormState> _formKey;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(top: 50, left: 24, right: 24),
+      child: custom_button(
+          textcolors: kwhite,
+          text: 'SignUp',
+          onPressed: () {
+            if (_formKey.currentState!.validate()) {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => VerificationCodes()));
+            }
+          },
+          warna: kgreen),
     );
   }
 }

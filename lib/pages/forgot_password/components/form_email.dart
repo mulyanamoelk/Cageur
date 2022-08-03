@@ -11,7 +11,7 @@ class FormEmailForgot extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 24, right: 24),
+      padding: const EdgeInsets.only(left: 24, right: 24, top: 50),
       child: Custom_Form_Suf(
           textValue: 'Email tidak boleh kosong',
           hintText: 'Email',

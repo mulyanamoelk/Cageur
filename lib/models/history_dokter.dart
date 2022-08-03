@@ -22,13 +22,13 @@ List<HistoryDokter> histories = [
       status: 'completed',
       tanggal: '20 Mei 2022'),
   HistoryDokter(
-      images: 'assets/images/dokter.png',
-      name: 'Dr. Lutfhi',
+      images: 'assets/images/anak.png',
+      name: 'Dr. Sinta',
       department: 'Dokter Umum',
       tahun: '3 Tahun',
       str: 'STR',
       status: 'completed',
-      tanggal: '20 Mei 2022'),
+      tanggal: '21 Mei 2022'),
   HistoryDokter(
       images: 'assets/images/dokter.png',
       name: 'Dr. Lutfhi',
@@ -36,7 +36,7 @@ List<HistoryDokter> histories = [
       tahun: '1 Tahun',
       str: 'STR',
       status: 'completed',
-      tanggal: '20 Mei 2022'),
+      tanggal: '22 Mei 2022'),
   HistoryDokter(
       images: 'assets/images/dokter.png',
       name: 'Dr. Lutfhi',
@@ -44,7 +44,7 @@ List<HistoryDokter> histories = [
       tahun: '5 Tahun',
       str: 'STR',
       status: 'completed',
-      tanggal: '20 Mei 2022'),
+      tanggal: '23 Mei 2022'),
   HistoryDokter(
       images: 'assets/images/dokter.png',
       name: 'Dr. Lutfhi',
@@ -52,7 +52,7 @@ List<HistoryDokter> histories = [
       tahun: '10 Tahun',
       str: 'STR',
       status: 'completed',
-      tanggal: '20 Mei 2022'),
+      tanggal: '24 Mei 2022'),
   HistoryDokter(
       images: 'assets/images/dokter.png',
       name: 'Dr. Lutfhi',
@@ -60,7 +60,7 @@ List<HistoryDokter> histories = [
       tahun: '11 Tahun',
       str: 'STR',
       status: 'completed',
-      tanggal: '20 Mei 2022'),
+      tanggal: '25 Mei 2022'),
   HistoryDokter(
       images: 'assets/images/dokter.png',
       name: 'Dr. Lutfhi',
@@ -68,7 +68,7 @@ List<HistoryDokter> histories = [
       tahun: '1 Tahun',
       str: 'STR',
       status: 'completed',
-      tanggal: '20 Mei 2022'),
+      tanggal: '26 Mei 2022'),
   HistoryDokter(
       images: 'assets/images/dokter.png',
       name: 'Dr. Lutfhi',
@@ -76,7 +76,7 @@ List<HistoryDokter> histories = [
       tahun: '3 Tahun',
       str: 'STR',
       status: 'completed',
-      tanggal: '20 Mei 2022'),
+      tanggal: '27 Mei 2022'),
   HistoryDokter(
       images: 'assets/images/dokter.png',
       name: 'Dr. Lutfhi',
@@ -84,7 +84,7 @@ List<HistoryDokter> histories = [
       tahun: '2 Tahun',
       str: 'STR',
       status: 'completed',
-      tanggal: '20 Mei 2022'),
+      tanggal: '28 Mei 2022'),
   HistoryDokter(
       images: 'assets/images/dokter.png',
       name: 'Dr. Lutfhi',
@@ -92,7 +92,7 @@ List<HistoryDokter> histories = [
       tahun: '2 Tahun',
       str: 'STR',
       status: 'completed',
-      tanggal: '20 Mei 2022'),
+      tanggal: '29 Mei 2022'),
   HistoryDokter(
       images: 'assets/images/dokter.png',
       name: 'Dr. Lutfhi',
@@ -100,29 +100,5 @@ List<HistoryDokter> histories = [
       tahun: '2 Tahun',
       str: 'STR',
       status: 'completed',
-      tanggal: '20 Mei 2022'),
-  HistoryDokter(
-      images: 'assets/images/dokter.png',
-      name: 'Dr. Lutfhi',
-      department: 'Dokter Umum',
-      tahun: '2 Tahun',
-      str: 'STR',
-      status: 'completed',
-      tanggal: '20 Mei 2022'),
-  HistoryDokter(
-      images: 'assets/images/dokter.png',
-      name: 'Dr. Lutfhi',
-      department: 'Dokter Umum',
-      tahun: '2 Tahun',
-      str: 'STR',
-      status: 'completed',
-      tanggal: '20 Mei 2022'),
-  HistoryDokter(
-      images: 'assets/images/dokter.png',
-      name: 'Dr. Lutfhi',
-      department: 'Dokter Umum',
-      tahun: '2 Tahun',
-      str: 'STR',
-      status: 'completed',
-      tanggal: '20 Mei 2022'),
+      tanggal: '30 Mei 2022'),
 ];

@@ -25,17 +25,22 @@ class ItemHistoryDokter extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Column(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 37),
-                  child: Image.asset(
-                    image.images,
-                    width: 80,
+            Container(
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(90),
+                    color: kwhite,
+                    border: Border.all(width: 1, color: kgreen)),
+                child: Padding(
+                  padding: const EdgeInsets.all(5.0),
+                  child: CircleAvatar(
+                    backgroundColor: kgreen,
+                    radius: 40,
+                    child: Image.asset(
+                      image.images,
+                      width: 80,
+                    ),
                   ),
-                ),
-              ],
-            ),
+                )),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
